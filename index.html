@@ -266,11 +266,9 @@
     <!-- ========== 移动端固定视频区域 ========== -->
     <!-- 移动端：视频固定在顶部，滚动时始终可见，跟导航栏重叠 -->
     <div class="md:hidden">
-        <!-- 视频区域：固定在顶部，z-45在导航栏(z-50)下方，让导航栏始终在最上 -->
-        <div class="fixed top-0 left-0 w-full z-45 bg-black">
-            <!-- 导航栏占位（和视频重叠，导航栏z-50在上方） -->
-            <div class="h-20"></div>
-            <!-- 视频：16:9比例 -->
+        <!-- 视频区域：固定在顶部，z-40在导航栏(z-50)下方，让导航栏始终在最上 -->
+        <div class="fixed top-0 left-0 w-full z-40 bg-black">
+            <!-- 视频：16:9比例，从顶部开始 -->
             <div class="relative w-full" style="padding-bottom: 56.25%;">
                 <video 
                     autoplay 
@@ -286,7 +284,7 @@
             </div>
         </div>
         <!-- 占位块：导航栏高度 + 视频高度 -->
-        <div style="padding-top: calc(20rem + 56.25vw);"></div>
+        <div style="padding-top: 56.25vw;"></div>
     </div>
 
     <!-- ========== 桌面端全屏视频区域 ========== -->
